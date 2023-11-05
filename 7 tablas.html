@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de Tablas en HTML</title>
+  <link rel="stylesheet" href="estilos-chillones.css">
+</head>
+
+<body>
+  <table border="1">
+    <caption>Tabla 1: Títulos en las Filas</caption>
+    <thead>
+      <tr>
+        <th>Título 1</th>
+        <th>Título 2</th>
+        <th>Título 3</th>
+        <th>Título 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+        <td>Dato 3</td>
+        <td>Dato 4</td>
+      </tr>
+      <tr>
+        <td>Dato 5</td>
+        <td>Dato 6</td>
+        <td>Dato 7</td>
+        <td>Dato 8</td>
+      </tr>
+      <tr>
+        <td>Dato 9</td>
+        <td>Dato 10</td>
+        <td>Dato 11</td>
+        <td>Dato 12</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Footer 1</td>
+        <td>Footer 2</td>
+        <td>Footer 3</td>
+        <td>Footer 4</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <table border="1">
+    <caption>Tabla 2: Títulos en las Columnas</caption>
+    <thead>
+      <tr>
+        <th>Título 1</th>
+        <th>Título 2</th>
+        <th>Título 3</th>
+        <th>Título 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Dato 1</th>
+        <td>Dato 2</td>
+        <td>Dato 3</td>
+        <td>Dato 4</td>
+      </tr>
+      <tr>
+        <th>Dato 5</th>
+        <td>Dato 6</td>
+        <td>Dato 7</td>
+        <td>Dato 8</td>
+      </tr>
+      <tr>
+        <th>Dato 9</th>
+        <td>Dato 10</td>
+        <td>Dato 11</td>
+        <td>Dato 12</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Footer 1</th>
+        <td>Footer 2</td>
+        <td>Footer 3</td>
+        <td>Footer 4</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <table border="1">
+    <caption>Tabla 3: Usando Colspan</caption>
+    <thead>
+      <tr>
+        <th>Título 1</th>
+        <th>Título 2</th>
+        <th colspan="2">Título 3 y 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+        <td colspan="2">Dato 3 y Dato 4</td>
+      </tr>
+      <tr>
+        <td>Dato 5</td>
+        <td>Dato 6</td>
+        <td colspan="2">Dato 7 y Dato 8</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Footer 1</td>
+        <td>Footer 2</td>
+        <td colspan="2">Footer 3 y Footer 4</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <table border="4">
+    <caption>Tabla 4: Usando Rowspan</caption>
+    <thead>
+      <tr>
+        <th rowspan="2">Título 1</th>
+        <th>Título 2</th>
+        <th>Título 3</th>
+        <th>Título 4</th>
+      </tr>
+      <tr>
+        <td>Dato 2</td>
+        <td>Dato 3</td>
+        <td>Dato 4</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 5</td>
+        <td>Dato 9</td>
+        <td>Dato 13</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Dato 6 y Dato 7</td>
+        <td>Dato 10</td>
+        <td>Dato 14</td>
+        <td>Dato 17</td>
+      </tr>
+      <tr>
+        <td>Dato 11</td>
+        <td>Dato 15</td>
+        <td>Dato 18</td>
+      </tr>
+      <tr>
+        <td>Dato 8</td>
+        <td>Dato 12</td>
+        <td>Dato 16</td>
+        <td>Dato 19</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td rowspan="2">Footer 1 y Footer 2</td>
+        <td>Footer 3</td>
+        <td>Footer 4</td>
+        <td>Footer 5</td>
+      </tr>
+      <tr>
+        <td>Footer 6</td>
+        <td>Footer 7</td>
+        <td>Footer 8</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

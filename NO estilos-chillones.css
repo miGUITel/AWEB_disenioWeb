@@ -1,0 +1,48 @@
+/* Estilos chillones */
+body {
+    background-color: #FFD700; /* Fondo amarillo brillante */
+    font-family: 'Comic Sans MS', cursive; /* Fuente divertida */
+}
+
+h1 {
+    color: #FF1493; /* Texto rosa intenso */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+p {
+    color: #0000FF; /* Texto azul brillante */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Efecto de animación pulse para párrafos */
+p:hover {
+    animation: pulse 1s infinite;
+}
+
+/* Definición de la animación pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilos para enlaces */
+a {
+    color: #FF4500; /* Color naranja */
+    text-decoration: none;
+    border-bottom: 1px dotted #FF4500;
+    transition: border-bottom 0.3s;
+}
+
+a:hover {
+    border-bottom: 2px solid #FF4500; /* Aumentar el grosor del borde al pasar el cursor */
+}

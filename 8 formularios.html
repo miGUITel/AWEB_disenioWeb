@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario Nombre y Apellidos</title>
+    <link rel="stylesheet" href="estilos-chillones.css" />
+  </head>
+  <body>
+    <form>
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" />
+      </p>
+      <p>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" />
+      </p>
+      <p>
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" />
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="transporte" value="bicicleta" />
+          Bicicleta
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="transporte" value="coche" checked />
+          Coche
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="radio" name="genero" value="hombre" />
+          Hombre
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="radio" name="genero" value="mujer" />
+          Mujer
+        </label>
+      </p>
+      <label for="cantidad">Cantidad (entre 1 y 99):</label>
+      <input type="number" id="cantidad" name="cantidad" min="1" max="99" />
+      
+        <fieldset>
+            <legend>Dirección</legend>
+            <p>
+                <label for="provincia">Provincia:</label>
+                <input type="text" id="provincia" name="provincia">
+            </p>
+            <p>
+                <label for="municipio">Municipio:</label>
+                <input type="text" id="municipio" name="municipio">
+            </p>
+            <p>
+                <label for="calle">Calle:</label>
+                <input type="text" id="calle" name="calle">
+            </p>
+        </fieldset>
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

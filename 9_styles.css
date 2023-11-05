@@ -1,0 +1,41 @@
+/* Estilos para selectores de tipo etiqueta */
+
+p {
+    font-size: 16px;
+    color: #333;
+    background-color: #dec839;
+    margin: 10px 0;
+}
+
+ol {
+    font-size: 18px;
+    color: #444;
+    background-color: #af6e6e;
+    margin: 10px 0;
+}
+
+/* Estilos para selectores de tipo clase */
+
+.normal {
+    color:red;
+    font-style: normal;
+    margin: 10px 0;
+}
+
+.cita {
+    font-style: italic;
+    color: #0066cc;
+    margin: 10px 0;
+}
+
+/* Estilos para selectores de tipo ID */
+
+#introduccion {
+    background-color: #ccffcc;
+    margin: 10px 0;
+}
+
+#conclusion {
+    background-color: #ffcccc;
+    margin: 10px 0;
+}
