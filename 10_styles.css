@@ -1,71 +1,20 @@
 /* Estilos generales */
-body {
+* {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 20px;
-    background-color: aquamarine;
+    background-color: rgb(255, 127, 127);
+    border-radius: 4px;
+    
 }
 
-/* Estilos para elementos en línea (span) */
-span.inline {
-    display: inline-block;
-    background-color: #e0e0e0;
-    border: 2px solid #333;
-}
+/* Estilo aplicado a p para pruebas */
+p{
+    background-color: #ffd000;
 
-/* Estilos para los elementos en línea (span) con diferencias notables */
-span.inline:nth-of-type(1) {
-    padding: 1px;
-    margin: 100px;
-    border-width: 8px;
-}
+    border: 3px solid red;
 
-span.inline:nth-of-type(2) {
-    padding: 50px;
-    margin: 1px;
-    border-width: 4px;
-}
+    margin: 50px;
+    padding: 20px;
 
-span.inline:nth-of-type(3) {
-    padding: 25px;
-    margin: 1px;
-    border-width: 6px;
-}
-
-span.inline:nth-of-type(4) {
-    padding: 10px;
-    margin: 60px;
-    border-width: 10px;
-}
-
-/* Estilos para elementos de bloque (div) */
-div.block {
-    background-color: #ffcc80;
-    border: 3px solid #ff0000;
-}
-
-/* Estilos para los elementos de bloque (div) con diferencias notables */
-div.block:nth-of-type(1) {
-    padding: 50px;
-    margin: 3px;
-    border-width: 8px;
-}
-
-div.block:nth-of-type(2) {
-    padding: 5px;
-    margin: 3px;
-    border-width: 4px;
-}
-
-div.block:nth-of-type(3) {
-    padding: 5px;
-    margin: 60px;
-    border-width: 6px;
-}
-
-div.block:nth-of-type(4) {
-    padding: 5px;
-    margin: 100px;
-    border-width: 10px;
 }
 
