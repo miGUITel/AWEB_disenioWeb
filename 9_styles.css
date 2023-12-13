@@ -7,6 +7,7 @@ p {
     margin: 10px 0;
 }
 
+/* Prueba 1: Cambiar ol por li*/
 ol {
     font-size: 18px;
     color: #444;
@@ -30,12 +31,13 @@ ol {
 
 /* Estilos para selectores de tipo ID */
 
-#introduccion {
+#introduccion1 {
     background-color: #ccffcc;
     margin: 10px 0;
 }
 
-#conclusion {
+#conclusion2 {
     background-color: #ffcccc;
     margin: 10px 0;
 }
+/* Analizar el aspecto de los párrafos finales*/
