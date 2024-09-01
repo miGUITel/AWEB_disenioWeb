@@ -1,0 +1,49 @@
+
+
+<!-- Ejemplo checkbox con etiqueta label separada -->
+<p>
+    <label for="bicicleta">Bicicleta</label>
+    <input type="checkbox" id="bicicleta" name="transporte" value="bicicleta">
+</p>
+
+<p>
+    <label for="coche">Coche</label>
+    <input type="checkbox" id="coche" name="transporte" value="coche" checked>
+</p>
+
+<!-- Ejemplo radio button con etiqueta label separada -->
+<p>
+    <label for="hombre">Hombre</label>
+    <input type="radio" id="hombre" name="genero" value="hombre">
+</p>
+<p>
+    <label for="mujer">Mujer</label>
+    <input type="radio" id="mujer" name="genero" value="mujer">
+</p>
+
+<!-- Ejemplo reset y submit con etiqueta label separada -->
+<form action="/action_page.php">
+    <div><label for="firstname">First name:</label>
+    <input type="text" id="firstname" name="firstname" value="Mickey"></div>
+    <div><label for="lastname">Last name:</label>
+    <input type="text" id="lastname" name="lastname" value="Mouse"></div>
+    <div><input type="submit" value="Enviar">
+    <input type="reset" value="Restablecer"></div>
+</form>
+
+<!-- Ejemplo de uso de fieldset con etiqueta label separada -->
+<fieldset>
+    <legend>Dirección</legend>
+    <div>
+        <label for="provincia">Provincia:</label>
+        <input type="text" id="provincia" name="provincia">
+    </div>
+    <div>
+        <label for="municipio">Municipio:</label>
+        <input type="text" id="municipio" name="municipio">
+    </div>
+    <div>
+        <label for="calle">Calle:</label>
+        <input type="text" id="calle" name="calle">
+    </div>
+</fieldset>
