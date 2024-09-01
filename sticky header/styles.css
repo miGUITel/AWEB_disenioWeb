@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  
+  .content {
+    padding-top: 100px; /* Adjust this value to match the height of the sticky header */
+  }
+  
+  .sticky-header {
+    background-color: #333;
+    color: #95d417;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 24px; /* Tamaño de fuente predeterminado */
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Agregamos una transición suave para suavizar el cambio de color y tamaño de fuente */
+  }
+  
+  .sticky-header.scrolled {
+    background-color: aqua; /* Cambiamos el color de fondo cuando se desplaza */
+    font-size: 20px; /* Cambiamos el tamaño de fuente cuando se desplaza */
+  }
+  
