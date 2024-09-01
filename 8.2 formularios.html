@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción a un Curso de Programación</title>
+</head>
+<body>
+
+    <h1>Formulario de Inscripción al Curso de Programación</h1>
+
+    <form action="/submit_registration.php" method="post" enctype="multipart/form-data">
+
+        <!-- Datos Personales -->
+        <fieldset>
+            <legend>Datos Personales</legend>
+            
+            <div>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+            </div>
+
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
+            </div>
+
+            <div>
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono">
+            </div>
+
+            <div>
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+
+            <div>
+                <label for="pais">País de residencia:</label>
+                <select id="pais" name="pais" required>
+                    <option value="espana">España</option>
+                    <option value="mexico">México</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Género:</p>
+                <input type="radio" id="hombre" name="genero" value="hombre" required>
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" name="genero" value="mujer">
+                <label for="mujer">Mujer</label>
+                <input type="radio" id="otro" name="genero" value="otro">
+                <label for="otro">Otro</label>
+            </div>
+        </fieldset>
+
+        <!-- Experiencia en Programación -->
+        <fieldset>
+            <legend>Experiencia en Programación</legend>
+            
+            <div>
+                <label for="nivel_experiencia">Nivel de experiencia:</label>
+                <select id="nivel_experiencia" name="nivel_experiencia" required>
+                    <option value="principiante">Principiante</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="avanzado">Avanzado</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Lenguajes de programación conocidos:</p>
+                <label><input type="checkbox" name="lenguajes" value="python"> Python</label><br>
+                <label><input type="checkbox" name="lenguajes" value="javascript"> JavaScript</label><br>
+                <label><input type="checkbox" name="lenguajes" value="java"> Java</label><br>
+                <label><input type="checkbox" name="lenguajes" value="csharp"> C#</label><br>
+                <label><input type="checkbox" name="lenguajes" value="otro"> Otro</label>
+            </div>
+        </fieldset>
+
+        <!-- Información Adicional -->
+        <fieldset>
+            <legend>Información Adicional</legend>
+            
+            <div>
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe cualquier comentario adicional que desees compartir"></textarea>
+            </div>
+
+            <div>
+                <label for="cv">Subir currículum vitae (opcional):</label>
+                <input type="file" id="cv" name="cv">
+            </div>
+        </fieldset>
+
+        <!-- Botones de envío y restablecer -->
+        <div>
+            <input type="submit" value="Enviar inscripción">
+            <input type="reset" value="Restablecer formulario">
+        </div>
+
+        <!-- Campo oculto -->
+        <input type="hidden" name="curso_id" value="programacion2024">
+
+    </form>
+
+</body>
+</html>
