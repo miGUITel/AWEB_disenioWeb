@@ -7,13 +7,18 @@ p {
     margin: 10px 0;
 }
 
-/* Prueba 1: Cambiar ol por li*/
+/* Prueba 1: Cambiar ol por li en html*/
 ol {
     font-size: 18px;
     color: #444;
     background-color: #af6e6e;
     margin: 10px 0;
 }
+
+/* si activo la siguiente regla, se aprecia cómo es distinto seleccionar ol que li */
+/* li{
+    background-color: blue;
+} */
 
 /* Estilos para selectores de tipo clase */
 
@@ -39,5 +44,9 @@ ol {
 #conclusion2 {
     background-color: #ffcccc;
     margin: 10px 0;
+}
+
+em{
+    background-color: yellow;
 }
 /* Analizar el aspecto de los párrafos finales*/
