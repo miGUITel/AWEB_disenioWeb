@@ -1,4 +1,4 @@
-/* Estilos para selectores de tipo etiqueta */
+/* Estilos para selectores de etiqueta */
 
 p {
     font-size: 16px;
@@ -7,7 +7,7 @@ p {
     margin: 10px 0;
 }
 
-/* Prueba 1: Cambiar ol por li en html*/
+/* Prueba 1: Cambiar ol por ul en html, dejará de  aplicarse esta regla*/
 ol {
     font-size: 18px;
     color: #444;
@@ -15,19 +15,23 @@ ol {
     margin: 10px 0;
 }
 
-/* si activo la siguiente regla, se aprecia cómo es distinto seleccionar ol que li */
+/*Prueba 2: si activo la siguiente regla, se aprecia cómo es distinto 
+seleccionar ol que li
+ol: incluye los números
+li: afecta únicamente al texto de los elementos */
 /* li{
     background-color: blue;
 } */
 
 /* Estilos para selectores de tipo clase */
-
+/* 3 Todos los elementos con clase normal aparecen en rojo*/
 .normal {
     color:red;
     font-style: normal;
     margin: 10px 0;
 }
 
+/* 4 Todos los elementos con clase cita aparecen en azul*/
 .cita {
     font-style: italic;
     color: #0066cc;
@@ -35,17 +39,19 @@ ol {
 }
 
 /* Estilos para selectores de tipo ID */
-
+/* 5 El elemento con id, y solo él, tiene el fondo verde*/
 #introduccion1 {
     background-color: #ccffcc;
     margin: 10px 0;
 }
 
+/* 6 El elemento con id, y solo él, tiene el fondo verde*/
 #conclusion2 {
     background-color: #ffcccc;
     margin: 10px 0;
 }
 
+/*Para enfatizar las notas explicativas he utilizado el elemento em*/
 em{
     background-color: yellow;
 }
