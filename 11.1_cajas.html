@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación margin y padding en elementos inline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 2;
+            text-align: center;
+        }
+
+        /* Estilo para el párrafo explicativo */
+        .explicacion {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #f8f8f8;
+            border: 2px solid #ccc;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* Estilo para los elementos inline */
+        span {
+            background-color: #ffd000;
+            border: 2px solid red;
+            padding: 20px; /*subir a 50, efecto inesperado*/
+            margin: 20px; /*subir a 50, solo efecto lateral*/
+        }
+
+        /* Para comparar, añadimos un bloque */
+        div {
+            background-color: #99ff99;
+            border: 2px solid green;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Comparación: margin y padding en elementos inline y de bloque</h1>
+
+    <div class="explicacion">
+        <p>
+            En los elementos <strong>de bloque</strong> (como <code>div</code> o <code>p</code>), 
+            los márgenes y rellenos afectan por igual en todas las direcciones. <br>
+            En los elementos <strong>inline</strong> (como <code>span</code> o <code>a</code>), 
+            los márgenes y rellenos <em>verticales</em> no separan el texto superior o inferior, 
+            solo afectan lateralmente.
+        </p>
+    </div>
+
+    <h2>Ejemplo visual</h2>
+    <h4>Modifica margin y padding de span para ver cómo verticalmente provoca efectos extraños</h4>
+
+    <p>Este es un <span>inline con margin y padding grande 20 (50 demasiado)</span> dentro de un texto.</p>
+
+    <div>Este es un elemento de bloque con los mismos márgenes y rellenos.</div>
+
+
+
+</body>
+</html>
