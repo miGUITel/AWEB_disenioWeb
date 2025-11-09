@@ -4,17 +4,40 @@
     text-align: center;
     background-color: rgb(255, 127, 127);
     border-radius: 10px;
-    
 }
 
-/* Estilo aplicado a p para pruebas */
-p{
+/* Estilo base para los párrafos, modifica para hacer pruebas */
+p {
     background-color: #ffd000;
-
     border: 3px solid red;
-
     margin: 50px;
     padding: 20px;
-
 }
 
+/* Caja 3: sin margen, mucho padding */
+.caja3 {
+    margin: 0;
+    padding: 60px;
+    background-color: #ff9900;
+}
+
+/* Caja 4: margen grande, poco padding */
+.caja4 {
+    margin: 100px;
+    padding: 5px;
+    background-color: #00ccff;
+}
+
+/* Caja 5: márgenes y paddings asimétricos */
+.caja5 {
+    margin: 10px 50px 80px 20px;   /* arriba, derecha, abajo, izquierda */
+    padding: 5px 40px 10px 60px;
+    background-color: #99ff99;
+}
+
+/* Caja 6: margen pequeño, padding medio */
+.caja6 {
+    margin: 10px;
+    padding: 30px;
+    background-color: #ff66cc;
+}
