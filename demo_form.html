@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Del formulario al XML</title>
+  <script src="demo_form-xml.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Del formulario al XML</h1>
+    <p>Rellena esta solicitud de ejemplo con datos ficticios y pulsa Enviar.</p>
+  </header>
+
+  <main>
+    <form id="formulario">
+      <fieldset>
+        <legend>Solicitud de intercambio · ejemplo reducido</legend>
+        <p>
+          <!-- for se relaciona con id; el XML recoge el name. -->
+          <label for="alumno-nombre">Nombre</label>
+          <input id="alumno-nombre" name="nombre" type="text" required>
+        </p>
+        <p>
+          <label for="alumno-correo">Correo electrónico</label>
+          <input id="alumno-correo" name="correo" type="email" required>
+        </p>
+        <p>
+          <label for="destino">País de destino</label>
+          <select id="destino" name="destino">
+            <option value="Francia">Francia</option>
+            <option value="Italia">Italia</option>
+            <option value="Portugal">Portugal</option>
+          </select>
+        </p>
+        <fieldset>
+          <legend>Alojamiento</legend>
+          <input id="familia" name="alojamiento" type="radio" value="familia" checked>
+          <label for="familia">Familia de acogida</label>
+          <input id="residencia" name="alojamiento" type="radio" value="residencia">
+          <label for="residencia">Residencia</label>
+        </fieldset>
+        <fieldset>
+          <legend>Servicios adicionales</legend>
+          <input id="desayuno" name="servicio" type="checkbox" value="desayuno">
+          <label for="desayuno">Desayuno</label>
+          <input id="traslado" name="servicio" type="checkbox" value="traslado">
+          <label for="traslado">Traslado desde el aeropuerto</label>
+        </fieldset>
+        <p>
+          <label for="comentarios">Comentarios</label><br>
+          <textarea id="comentarios" name="comentarios" rows="3" cols="45"></textarea>
+        </p>
+        <button type="reset">Restablecer</button>
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+
+    <section aria-labelledby="titulo-xml">
+      <h2 id="titulo-xml">XML generado</h2>
+      <pre id="resultado">Pulsa Enviar para generar el XML.</pre>
+      <a id="descargar" download="solicitud.xml" hidden>Descargar XML</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Los datos se procesan en este navegador. El enlace permite descargar el XML en tu equipo.</p>
+  </footer>
+</body>
+</html>
